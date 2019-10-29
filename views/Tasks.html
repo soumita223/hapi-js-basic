@@ -1,0 +1,12 @@
+<h1>Tasks</h1>
+<form method="post" action="/tasks" className="Form_info" >
+<input type="text" name="text" placeholder="Enter your task"/><br>
+<input type="text" name="textRem" placeholder="Remove Task"/><br><br>
+<button name="sbmt">submit</button>
+
+</form>
+<ul>
+    {{#each tasks}}
+    <li>{{text}}</li>
+    {{/each}}
+</ul>
